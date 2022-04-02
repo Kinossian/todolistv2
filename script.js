@@ -2,10 +2,15 @@
 //Charger la session
 ol.innerHTML = localStorage.getItem("list");
 
-//Supprimer au click apprer rechargement
+//Supprimer au click apres rechargement
 const spanDels = document.querySelectorAll(".delete");
 for (let span of spanDels) {
   span.onclick = () => del(span.parentElement);
+}
+//Check au click apres rechargement
+const spanChecks = document.querySelectorAll(".check");
+for (let span of spanChecks) {
+  span.onclick = () => check(span.parentElement);
 }
 //N'affiche "aucune tache" au raffraichissment si il y a des tache
 noTache.style.display = ol.innerHTML == "" ? "flex" : "none";
