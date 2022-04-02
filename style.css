@@ -47,6 +47,7 @@ h1 {
   color: #ffffff;
   background-color: #ff4f98;
 }
+
 /* AUCUNE TACHE */
 #noTache {
   margin-top: 20px;
@@ -121,4 +122,18 @@ li {
   background-color: white;
   border-radius: 10px;
   transition: all 0.3s ease;
+}
+
+@media screen and (min-width: 600px){
+  h1,
+form,
+#noTache,
+#ol {
+  margin:20px auto;
+  width: 50%;
+}
+.check,
+.delete{
+  margin-right: 20%;
+}
 }
