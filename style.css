@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lobster", cursive;
+}
+body {
+  background: linear-gradient(120deg, #00a782, #479191);
+}
+h1,
+form,
+#noTache,
+#ol {
+  display: flex;
+  justify-content: center;
+}
+/* TITRE */
+h1 {
+  font-size: 5rem;
+  margin: 30px 0 10px 0;
+  color: #ffd900;
+}
+
+/*INPUT*/
+#champ {
+  background: #ffffff;
+  border: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 80%;
+  height: 3rem;
+  font-size: 1.5rem;
+  padding: 1px 1px 1px 10px;
+}
+/* BOUTON */
+#btnAjouter {
+  width: 10%;
+  font-size: 2rem;
+  border: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: #ff4f98;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#btnAjouter:hover {
+  color: #ffffff;
+  background-color: #ff4f98;
+}
+/* AUCUNE TACHE */
+#noTache {
+  margin-top: 20px;
+  font-size: 2rem;
+}
+/* LISTE */
+#ol {
+  border-radius: 10px;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-size: 2rem;
+  flex-direction: column;
+  /* background-color: rgba(255, 255, 255, 0.568); */
+  font-size: 1.5rem;
+  align-items: center;
+  list-style: none;
+}
+
+/* BUTON POUBELLE */
+.delete {
+  position: absolute;
+  right: 5px;
+  background-color: #ff4f98;
+  color: #ffd7d7;
+  width: 40px;
+  height: 40px;
+  display: inline;
+  text-align: center;
+  transform: translate(10%, -12%);
+  line-height: 38px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.delete:hover {
+  color: #ff4f98;
+  background-color: #ffd7d7;
+}
+/* BUTON CHECK */
+.check {
+  position: absolute;
+  right: 46px;
+  background-color: #ff4f98;
+  color: #ffd7d7;
+  width: 40px;
+  height: 40px;
+  display: inline;
+  text-align: center;
+  transform: translate(10%, -12%);
+  line-height: 38px;
+  /* border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px; */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.check:hover {
+  color: #ff4f98;
+  background-color: #ffd7d7;
+}
+/* CLASS CHECKED */
+.checked {
+  opacity: 0.2;
+}
+/* TODO */
+li {
+  margin: 5px 0 5px 0;
+  padding: 2px 0 2px 10px;
+  width: 100%;
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
